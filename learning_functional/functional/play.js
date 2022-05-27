@@ -4,6 +4,8 @@ import {
   unless,
   print,
   times,
+  every,
+  some,
 } from "../lib/es8-functional";
 
 const array = [1, 2, 3];
@@ -31,8 +33,11 @@ forEach([1, 2, 3, 4, 5, 6, 7, 8], (num) => {
   });
 });
 
-times(100, (num) => {
-  unless(num % 2, () => {
-    print(`${num} is even`);
-  });
-});
+// times(100, (num) => {
+//   unless(num % 2, () => {
+//     print(`${num} is even`);
+//   });
+// });
+
+print(every([3, 4, NaN], isNaN));
+print(some([3, 4, NaN], isNaN));
