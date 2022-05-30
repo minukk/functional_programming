@@ -1,0 +1,17 @@
+{
+  "name": "learning_functional",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "play": "babel-node functional/play.js --presets es2017-node7"
+  },
+  "author": "minuk",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2017-node7": "^0.5.2",
+    "sync-request": "^6.1.0"
+  }
+}
